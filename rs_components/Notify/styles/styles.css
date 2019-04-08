@@ -1,0 +1,38 @@
+
+.close-button {
+  float: right;
+}
+
+.notify {
+  background: white;
+  width: 100%;
+  border-radius: 15px;
+  padding: 3%;
+  box-shadow: 0 1px 16px rgba(0,0,0,0.12), 0 4px 10px rgba(0,0,0,0.24);
+}
+
+.notify-title {
+  padding:10px;
+  font-weight: bold;
+}
+
+.notify-message {
+  font-weight:lighter;
+  padding:10px;
+}
+
+.danger {
+  color : #EF6C00
+}
+
+.warning {
+  color : #EF6C00
+}
+
+.success {
+  color : #EF6C00
+}
+
+.primary {
+  color : #EF6C00
+}

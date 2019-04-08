@@ -1,0 +1,194 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-text {
+  color: #4A4A4A;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.input-wrapper .error-message {
+  color: #F44336;
+  font-size: 10px;
+}
+
+.error-message-null {
+  margin-bottom: 20.5px;
+}
+
+.input-grid-wrapper {
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .input-text {
+    font-size: 12px;
+  }
+}
+
+.input {
+  height: 40px;
+  border-color: #C9CBD0;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff8a00;
+}
+
+.input::placeholder {
+  color: #C9CBD0;
+  opacity: 1;
+  font-size: 14px;
+}
+
+.textarea {
+  height: 100px;
+  resize: none;
+  border-color: #C9CBD0;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.textarea:focus {
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff8a00;
+}
+
+.textarea::placeholder {
+  color: #C9CBD0;
+  opacity: 1;
+  font-size: 14px;
+}
+
+/* password input */
+.password-wrapper {
+  width: 100%;
+}
+
+.eye-icon {
+  position: relative;
+  margin-top: -33px;
+  float: right;
+  margin-right: 10px;
+}
+
+/* file input */
+.file-input-wrapper {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+.file-input-overlay {
+  width: 100%;
+  position: absolute;
+}
+
+.file-input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* textarea */
+.textarea {
+  border-color: #C9CBD0;
+  border-width: 1px;
+  border-style: solid;
+  background-color: white;
+  width: 100%;
+  font-size: 14px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.textarea::placeholder {
+  color: #C9CBD0;
+  opacity: 1;
+  font-size: 14px;
+}
+
+.textarea.vertical {
+  resize: vertical;
+}
+
+.Textarea.horizontal {
+  resize: horizontal;
+}
+
+/* mobile number */
+.mobile-input[type=number]::-webkit-inner-spin-button,
+.mobile-input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.mobile-input {
+  margin-left: -1px;
+  border-left-width: 0;
+}
+
+.mobile-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.mobile-input-wrapper .country-select {
+  width: 125px;
+}
+
+.mobile-input-wrapper .Select-control {
+  border-right-width: 0;
+}
+
+.mobile-input-wrapper .Select.is-focused:not(.is-open) > .Select-control {
+  border-color: #C9CBD0;
+}
+
+.mobile-input-wrapper .country-img {
+  height: 15px;
+  width: auto;
+  margin-right: 5px;
+}
+
+.mobile-input-wrapper .country-value-wrapper,
+.mobile-input-wrapper .country-option-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+}
+
+.mobile-input-wrapper .country-option-wrapper {
+  width: 140px;
+  font-size: 12px;
+}
+
+.country-select .Select-arrow-zone {
+  display: none;
+}

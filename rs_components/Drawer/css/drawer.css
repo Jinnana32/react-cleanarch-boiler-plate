@@ -1,0 +1,102 @@
+.drawer-root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.drawer-root.with-header {
+  top: 57px;
+}
+
+/* drawer */
+.drawer {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transition: transform .3s ease-out;
+  -webkit-transition: transform .3s ease-out;
+  will-change: transform;
+  overflow-y: auto;
+  background-color: #414D56;
+  left: 0;
+}
+
+.drawer.with-header {
+  top: 57px;
+}
+
+.drawer.right {
+  right: 0;
+  left: auto;
+}
+
+.drawer.no-transition {
+  transition: none;
+}
+
+/* outside */
+.outside {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.outside.show {
+  visibility: visible;
+}
+
+/* content */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  transition: margin .3s ease-out;
+  -webkit-transition: margin .3s ease-out;
+}
+
+.content.fixed {
+  min-width: 100%;
+}
+
+.content.with-header {
+  top: 57px;
+}
+
+.content.no-transition {
+  transition: none;
+  -webkit-transition: none;
+}
+
+/* drag handle */
+.drag-handle {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+
+.drag-handle.with-header {
+  top: 57px;
+}
+
+.drag-handle.left {
+  left: 0;
+}
+
+.drag-handle.right {
+  right: 0;
+}

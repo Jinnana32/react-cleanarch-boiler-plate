@@ -1,0 +1,131 @@
+._generic-button {
+  border-radius: 5px;
+  height: 40px;
+  margin: auto;
+  min-width: 150px;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  color: #ff8A00;
+}
+
+._btn-fab {
+ width: 54px;
+ height: 54px;
+ background: #ff8A00;
+ border-radius: 50%;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ transition: all 0.1s ease-in-out;
+ font-size: 36px;
+ color: #fff;
+ text-align: center;
+ line-height: 35px;
+ border: 1px;
+ outline: none;
+ position: fixed;
+ right: 50px;
+ bottom: 50px;
+ cursor: pointer;
+}
+
+._btn-fab:hover {
+  box-shadow: 0 0px 4px 0 #666;
+  transform: scale(1.05);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.profile-icon-settings {
+  background-size: contain;
+  cursor: pointer;
+  background-color: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+}
+
+#float-button {
+  height: 50px;
+  margin-bottom: 5%;
+}
+#float-button button {
+  background: white;
+  height: 50px;
+  width: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 7px 12px 1px rgba(0, 0, 0, 0.07);
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  transition: 0.3s transform cubic-bezier(0.22, -0.57, 0.51, 1.07), 0.2s 0.1s opacity, 0.15s background-color ease-in-out, 0.3s box-shadow;
+}
+#float-button button:hover {
+  box-shadow: 0 7px 12px 1px rgba(0, 0, 0, 0.15);
+}
+#float-button button:focus {
+  outline: none;
+}
+#float-button button.primary {
+  background: #2196f3;
+  border-color: #1976D2;
+  color: white;
+  z-index: 11;
+}
+#float-button button i {
+  transition: transform .3s;
+}
+#float-button button:not(.primary) {
+  opacity: 0;
+}
+#float-button.active button.primary i {
+  transform: rotate(45deg);
+}
+#float-button.active button:not(.primary):nth-of-type(1) {
+  transform: translateY(0px);
+  transition: 0.15s 0s transform cubic-bezier(0.33, 0.16, 0.26, 1.72), 0.1s opacity, 0.15s background-color ease-in-out, 0.3s box-shadow;
+  opacity: 1;
+  z-index: 10;
+}
+#float-button.active button:not(.primary):nth-of-type(2) {
+  transform: translateY(-65px);
+  transition: 0.25s 0.015s transform cubic-bezier(0.33, 0.16, 0.26, 1.72), 0.1s opacity, 0.15s background-color ease-in-out, 0.3s box-shadow;
+  opacity: 1;
+  z-index: 9;
+}
+#float-button.active button:not(.primary):nth-of-type(3) {
+  transform: translateY(-130px);
+  transition: 0.35s 0.03s transform cubic-bezier(0.33, 0.16, 0.26, 1.72), 0.1s opacity, 0.15s background-color ease-in-out, 0.3s box-shadow;
+  opacity: 1;
+  z-index: 8;
+}
+#float-button.active button:not(.primary):nth-of-type(4) {
+  transform: translateY(-195px);
+  transition: 0.45s 0.045s transform cubic-bezier(0.33, 0.16, 0.26, 1.72), 0.1s opacity, 0.15s background-color ease-in-out, 0.3s box-shadow;
+  opacity: 1;
+  z-index: 7;
+}
+#float-button.active button:not(.primary):nth-of-type(5) {
+  transform: translateY(-260px);
+  transition: 0.55s 0.06s transform cubic-bezier(0.33, 0.16, 0.26, 1.72), 0.1s opacity, 0.15s background-color ease-in-out, 0.3s box-shadow;
+  opacity: 1;
+  z-index: 6;
+}
+#float-button.active button:not(.primary):nth-of-type(6) {
+  transform: translateY(-325px);
+  transition: 0.65s 0.075s transform cubic-bezier(0.33, 0.16, 0.26, 1.72), 0.1s opacity, 0.15s background-color ease-in-out, 0.3s box-shadow;
+  opacity: 1;
+  z-index: 5;
+}
